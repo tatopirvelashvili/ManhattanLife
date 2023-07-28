@@ -1,0 +1,569 @@
+
+<!DOCTYPE html>
+ <html class="fp-enabled" lang="en" style="overflow: hidden; height: 100%;">
+ <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	 <meta charset="UTF-8" />
+	 <title>Manhetenlife - საუკეთესო FullRP სერვერი </title>
+	 <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	 <meta name="description" content="Manhetenlife FullRP — უდედამოტყნულესი სერვერი საქართველოში " />
+	 <meta name="keywords" content="RP, FullRP, RolePlay, MLife, SAMP, GTA SA, Manhetenlife, MLife FullRP, Manhetenlife RP" /> 
+	 <link href="css/slick_1e449cff.css" rel="stylesheet" />
+	 <link href="css/main_1e449cff.css" rel="stylesheet" />
+	 <link href="css/fullpage_1e449cff.css" rel="stylesheet" />
+	 <link href="favicon.ico" rel="shortcut icon" />
+	 <link href="css/themes/semantic.rtl.min_1e449cff.css" rel="stylesheet" />
+	 <script src="js/jquery-1.11.3.min_1e449cff.js">
+	</script>
+	 <script src="js/fm.revealator.jquery.min_1e449cff.js">
+	</script>
+	 <script src="js/jquery-ui_1e449cff.js">
+	</script>
+	<meta name="verification" content="2b8ecb77452283ee8c8759cd162b78" />
+ <script>
+	   jQuery(function($) {
+	   
+	   var index = 'qpsstats-active-tab';
+	   var dataStore = window.sessionStorage;
+	   var oldIndex = 0;
+	   
+	   var tabs = $('.about_tabs');
+	   var tabs_select = true;
+	   var selector = $(".about_tabs").find(".slide__redage");
+	   var activeItem = tabs.find('.about_tabs li .ui-state-active');
+	   var activeWidth = activeItem.innerWidth();
+	   
+	   $(".slide__redage").css({
+	     "left": activeItem.position.left + "px", 
+	     "width": activeWidth + "px"
+	   });
+
+
+
+	       
+	   try {
+	       oldIndex = dataStore.getItem(index);
+	       $('#redage_slide').addClass('animated fadeInLeft tabs' + oldIndex);
+	       $('#redage_slide').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+	           $(this).removeClass('animated fadeInLeft');
+	       });
+	   } catch (e) {}
+
+
+	   $("#tabs").tabs({
+	       active: oldIndex,
+	       hide: {
+	           effect: "fade",
+	           duration: 200
+	       },
+	       show: { 
+	           function( event, ui ) {
+
+	           alert('2');
+	           },
+	           effect: "fade",
+	           direction: "right",
+	           duration: 200
+	       }, 
+	       activate: function(event, ui) {
+				   tabs_select = false;
+					
+				   var newIndex = ui.newTab.parent().children().index(ui.newTab);
+				
+				   $('#redage_slide').removeClass();
+				   $('#redage_slide').addClass('animated fadeInLeft tabs' + newIndex);
+				   $('#redage_slide').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+					   $(this).removeClass('animated fadeInLeft');  
+				 });
+					var isn = $('.ui-tabs-active');
+					var activeWidth = isn.innerWidth();
+					var itemPos = isn.position();
+						 $(".slide__redage").css({
+						   "left":itemPos.left + "px", 
+						   "width": activeWidth + "px"
+					});
+	           
+			   
+	           try {
+	               dataStore.setItem(index, newIndex);
+	           } catch (e) {}
+				tabs_select = true;
+	       }
+	   })
+	   
+	   	   
+/* 	   $(".about_tabs").on("click","li",function(e){
+		if (tabs_select == true) {
+		 e.preventDefault();
+	     var activeWidth = $(this).innerWidth();
+	     var itemPos = $(this).position();
+	     $(".slide__redage").css({
+	       "left":itemPos.left + "px", 
+	       "width": activeWidth + "px"
+	     });
+			
+		}
+	   });
+	        */
+	   
+	   
+			window.onload = function() {
+			var elm = $(".revealator-slideright");
+			elm.css('transform','translate(0, 0)').css('opacity', '1').css('z-index', '1');
+			};
+				   
+			
+	    	function slider_tabs() {
+	        var elm = $(".ui-state-active");
+	        var activeWidth = elm.innerWidth();
+	        var itemPos = elm.position();
+	        $(".slide__redage").css({
+			"left":itemPos.left + "px", 
+			"width": activeWidth + "px"
+			});
+			}
+			window.onresize = function(event) {
+			slider_tabs();
+		    };
+			
+			
+			slider_tabs();
+	})
+	</script>
+	 <style>
+	   .ajs-message.ajs-default_rd {
+	   background: rgba(166, 166, 166, 0.65);
+	   color: #fff;
+	   border: none;
+	   border-radius: 6px;
+	   }
+
+		.container_item__play:nth-child(3) .btn__play {
+		pointer-events: none;
+		}
+	</style>
+	
+ <meta name="yandex-verification" content="fe0edfe396221c45" />
+
+ <script type="text/javascript">!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="../vk.com/js/api/openapi_4b89dc24.js",t.onload=function(){VK.Retargeting.Init("VK-RTRG-388263-7sYiV"),VK.Retargeting.Hit()},document.head.appendChild(t)}();</script><noscript><img src="../vk.com/rtrg_73fe6832" style="position:fixed; left:-999px;" alt="" /></noscript>
+ <meta name="google-site-verification" content="ahDiysBb8kq-zD6oXjqPseJRwAWiK8gDI47DFAefhZU" />
+ <!-- Global site tag (gtag.js) - Google Analytics -->
+ <script async="" src="../www.googletagmanager.com/gtag/js_dac8b6cf.js"></script>
+ <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-138889592-2');
+</script>
+
+ </head>
+ <div id="p_prldr"><div class="contpre"><span class="svg_anm"></span><br />Manhetenlife <br /><small>იტვირთება! </small></div></div>
+	 <div class="layout__header">
+		 <div class="container">
+			 <div class="header" id="myMenu">
+				 <div class="header__content">
+					 <div class="header__bars">
+						 <div class="bars js-controller" data-controlled=".header__links"></div>
+					 </div>
+				 </div>
+				 <div class="header__links">
+					 <div class="header__nav">
+						 <div class="nav">
+							 <a class="nav__link" data-menuanchor="home" href="#home">მთავარი </a>  <a class="nav__link" data-menuanchor="about-the-project" href="#about-the-project">დონაცია </a>
+						 </div>
+					 </div>
+                     <div class="header__contacts">
+					 </div>
+				 </div>
+			 </div>
+		 </div>
+	 </div>
+	 <div class="layout__content">
+		 <div class="content fullpage-wrapper" id="fullpage">
+			 <div class="section content__slide_home fp-section fp-table" data-anchor="home" data-fp-styles="null">
+				 <div class="fp-tableCell">
+					 <div class="pxl">
+						 <div id="scene">
+							 <div class="slide-main__bg" data-depth="0.2"></div>
+						 </div>
+					 </div>
+					 <div class="slide-content slide-content_home container">
+						 <div style="margin: 0px;" class="home slide-content__content wrapper" >
+							 <div class="home__main revealator-slideright revealator-once">
+								
+								 <div class="md_bls">
+    								
+    								 <div class="title_news"> </div>
+									
+									 <ul class="news_block">
+           								 <li><a href=" " target="_blank">გამარჯობა მეგობარო, პირველ რიგში ჩვენს სერვერზე რომ შემოხვიდე საჭიროა ჩაიწერო ჩვენი ლაუნჩერი ↓</a></li>
+ <li><a href=" " target="_blank">ლაუნჩერს რომ ჩაიწერთ ინსტალაციის დროს არ შეუცვალოდ მდებარეობა ფოლდერს, საჭიროა დაინსტალირდეს Document'ში!</a></li>
+									 </ul>
+									 
+    								
+    								 <div class="home__button">
+    									 <a class="primary_btn gradient_btn__orange start_play" href="http://80.241.245.14:8080/ManhetenLife/ManhetenlifesLauncher.exe">გადმოწერა</a>
+    									 <div class="video_play">
+    										 <div class="video_play__lds">
+    											 <a href="https://youtu.be/3elGpLy9AJo"> 
+    											 <div class="lds-css ng-scope">
+    												 <div class="lds-eclipse" style="width:100%;height:100%">
+    													 <div></div>
+    												 </div>
+    											 </div></a>
+    										 </div>
+    									 </div>
+    								 </div>
+    								
+								 </div>
+								 <div class="server" id="serv_upd">
+								 <div class="serv__rd" id="upd_Black">
+					 <div class="serv__rd__title h2">
+						Manhetenlife FullRP
+					 </div>
+					 <div class="serv__rd__text">
+					 </div>
+					 <div class="serv__rd__line">
+					 <span class="gradient_btn__orange"></span>
+					 </div>
+					 <div class="serv__rd__text">
+					 </div>
+					 <div class="serv__rd__ip" id="serv_Black">
+				 <span>სერვერი ჩართულია </span><a href="#" onclick="CopyToClipboard('serv_Black')"> </a>
+			 </div>
+		 </div>
+								 </div>
+							 </div>
+							 <div class="per__main">
+								 <div class="person__left revealator-slideright revealator-once"></div>
+								 <div class="person__right revealator-slideleft revealator-delay2 revealator-once">
+								 </div>
+							 </div>
+						 </div>
+					 </div>
+				 </div>
+			 </div>			
+
+			
+			 <div class="section content__slide__footer fp-section fp-table" data-anchor="footer" data-fp-styles="null">
+				 <div class="fp-tableCell">
+					 <div class="slide-content slide-content_footer container wrapper">
+						 <div class="footer slide-content__content">
+							 <div class="slide-content__content-side footer">		
+								<div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins">
+									<div class="wrapper wrapper--w780">
+										<div class="card card-3">
+											<div class="card-body">
+												<h2 class="title">დონაცია დროებით გათიშულია</h2>
+												<form method="POST">
+													<div class="input-group">
+														<input class="input--style-3" type="text" placeholder="სახელი_გვარი" name="nameingame">
+													</div>
+													<div class="input-group moneydiv">
+														<input style="width:60%!important ; border-bottom: 1px solid rgba(255, 255, 255, 0.2);" class="input--style-3 valueinp" type="number" placeholder="თანხა ლარში" name="nameingame">
+														<p style="width:30%!important ; border-bottom: 1px solid rgba(255, 255, 255, 0.2);" class="input--style-3 valuep" type="text" name="nameingame">$</p>
+													</div>
+													<div class="input-group">
+														<input class="input--style-3" type="email" placeholder="Email" name="email">
+													</div>
+													<div class="p-t-10">
+													<a href="https://www.facebook.com/ManhetenLife"><button class="btn btn--pill btn--green" type="submit">ყიდვა</button> </a>
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>									
+								</div>
+							 </div>
+							 <footer class="footer">
+								 <div>
+									
+								 </div>
+								 <div>
+									 <a href=" " target="_blank">© 2020 MLife. ყველა უფლება დაცულია. </a>
+								 </div>
+							 </footer>
+						 </div>
+					 </div>
+				 </div>
+			 </div>
+		 </div>
+		</div>
+	 <link href="css/slick-theme_1e449cff.css" rel="stylesheet" />
+	 <link href="css/fm.revealator.jquery_1e449cff.css" rel="stylesheet" />
+	 <link href="css/animate_1e449cff.css" rel="stylesheet" />
+	 <link href="css/magnific-popup_1e449cff.css" rel="stylesheet" />
+	 <link href="css/alertify.min_1e449cff.css" rel="stylesheet" />
+	 <script src="js/alertify.min_1e449cff.js">
+	</script> 
+	 <script src="js/jquery_1e449cff.js">
+	</script> 
+	 <script src="js/fastmark_1e449cff.js">
+	</script> 
+	 <script src="js/fullpage_1e449cff.js">
+	</script> 
+	 <script src="js/parallax_1e449cff.js">
+	</script> 
+	<script src="./js/global.js"></script>
+	 <script src="js/main_1e449cff.js">
+	</script> 
+	 <script src="js/slick.min_1e449cff.js">
+	</script> 
+	 <script src="js/jquery.magnific-popup_1e449cff.js">
+	</script> 
+	 <script>
+	    $(document).ready(function(){
+	       function resizeInput() {
+	           $(this).attr('size', $(this).val().length);
+	           $('#ok').text($(this).val());
+	       }
+
+	       $('.width-dynamic')
+	           // event handler
+	           .keyup(resizeInput)
+	           // resize on page load
+	           .each(resizeInput);
+	           
+	        $('.server').slick({
+	         dots: false,
+	         infinite: false,
+	         speed: 300,
+	         slidesToShow: 3,
+	         slidesToScroll: 3,
+	         variableWidth: true,
+	         arrows: false,
+	         responsive: [
+	           {
+	             breakpoint: 1024,
+	             settings: {
+	               slidesToShow: 2,
+	               slidesToScroll: 2,
+	               infinite: true,
+	               dots: false
+	             }
+	           },
+	           {
+	             breakpoint: 600,
+	             settings: {
+	               slidesToShow: 1,
+	               slidesToScroll: 1
+	             }
+	           },
+	           {
+	             breakpoint: 480,
+	             settings: {
+	               slidesToShow: 1,
+	               slidesToScroll: 1
+	             }
+	           }
+
+	         ]
+	       });
+	        
+
+	        //
+	        $('.modal').magnificPopup({
+	        type: 'inline',
+	        removalDelay: 300,
+	        mainClass: 'my-mfp-zoom-in',
+	        fixedContentPos: false
+	        });     
+	        
+	        //
+	        $('.modal_blur').magnificPopup({
+	        type: 'inline',
+	        removalDelay: 300,
+	        mainClass: 'my-mfp-zoom-in',
+	        fixedContentPos: false,
+	        callbacks: {
+	           open: function() {
+	               $('.layout__content').css('filter', 'blur(10px)');
+	               $('.layout__header').css('filter', 'blur(10px)');
+	               },
+	               close: function() {
+	               $('.layout__content').css('filter', 'blur(0px)');
+	               $('.layout__header').css('filter', 'blur(0px)');
+	               }
+	           }
+	        });
+	        
+	       $('.modal-video-redage').magnificPopup({
+	         type: 'iframe',
+	         fixedContentPos: false,
+	           iframe: {
+	             markup: '<div class="mfp-iframe-scaler">'+
+	                       '<div class="mfp-close"><\/div>'+
+	                       '<iframe class="mfp-iframe" frameborder="0" allowfullscreen><\/iframe>'+
+	                     '<\/div>', // HTML markup of popup, `mfp-close` will be replaced by the close button
+	             patterns: {
+	               youtube: {
+	                 index: 'youtube.com/', // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
+
+	                 id: 'v=', // String that splits URL in a two parts, second part should be %id%
+	                 // Or null - full URL will be returned
+	                 // Or a function that should return %id%, for example:
+	                 // id: function(url) { return 'parsed id'; }
+
+	                 src: '../www.youtube.com/embed/%id%_fa6dc463.html' // URL that will be set as a source for iframe.
+	               },
+	               vimeo: {
+	                 index: 'vimeo.com/',
+	                 id: '/',
+	                 src: '//player.vimeo.com/video/%id%?autoplay=1'
+	               },
+	               gmaps: {
+	                 index: '//maps.google.',
+	                 src: '%id%&output=embed'
+	               }
+
+	               // you may add here more sources
+
+	             },
+
+	             srcAction: 'iframe_src', // Templating object key. First part defines CSS selector, second attribute. "iframe_src" means: find "iframe" and set attribute "src".
+	           }
+	         
+	         
+	       });
+	       
+	    });
+		
+		
+			
+	
+		var Interval = 10000;
+		var timer = setInterval(get_server, Interval);
+		
+		
+			function get_server() {
+			
+			var srv_rds = {'1':{'ip':'51.77.42.5', 'name':'Black', 'full':'RedAge Roleplay Server Black'}, '2':{'ip':'white.redage.net:22005', 'name':'White', 'full':'RedAge RolePlay | White | Global Update'}, '3':{'ip':'51.83.140.179', 'name':'Red', 'full':'RedAge Roleplay Server Red'}};
+
+				var jqxhr = $.getJSON('../cdn.rage.mp/master/index.html', function(data){
+	
+					jqxhr.success(function() { 
+				
+					$.each(data, function(ind, val){
+
+						$.each(srv_rds, function(indx, valx){
+
+								if(ind.indexOf(srv_rds[indx]['ip']) + 1) {
+									
+									for (var s in val){
+										if (val.hasOwnProperty(s)) {
+											
+												var maxplayers = val['maxplayers'] - 650;
+												var players = val['players'];
+												var proc = maxplayers/100;
+												var width = players/proc;
+
+										}
+									}
+									
+                                $('#upd_' + srv_rds[indx]['name'] + ' .serv__rd__ip span').text(ind);
+								$('#upd_' + srv_rds[indx]['name'] + ' .serv__rd__text span').html(players + ' / '+ maxplayers);
+								$('#upd_' + srv_rds[indx]['name'] + ' .serv__rd__line span').css('width', width+'%');
+									
+								delete srv_rds[ind];
+								
+								} else if (val['name'].indexOf(srv_rds[indx]['full']) + 1) {
+									
+								for (var s in val){
+										if (val.hasOwnProperty(s)) {
+											
+												var maxplayers = val['maxplayers'] - 650;
+												var players = val['players'];
+												var proc = maxplayers/100;
+												var width = players/proc;
+
+										}
+									}
+									
+                                $('#upd_' + srv_rds[indx]['name'] + ' .serv__rd__ip span').text(ind);
+								$('#upd_' + srv_rds[indx]['name'] + ' .serv__rd__text span').html(players + ' / '+ maxplayers);
+								$('#upd_' + srv_rds[indx]['name'] + ' .serv__rd__line span').css('width', width+'%');
+								
+								delete srv_rds[ind];
+								
+								}
+							
+						 });
+	
+					  });
+
+					})
+					
+					jqxhr.error(function() { console.log("no connection"); })
+
+					$.each(srv_rds,function(index,value){
+							$('#upd_' + srv_rds[index]['name'] + ' .serv__rd__text span').html('<span style="color:red;">Выключен</span>');
+							$('#upd_' + srv_rds[index]['name'] + ' .serv__rd__line span').css('width', '0%');
+					});
+					
+				});
+				
+				if (!jqxhr) {
+					$.each(srv_rds,function(index,value){
+							$('#upd_' + srv_rds[index]['name'] + ' .serv__rd__text span').html('<span style="color:red;">Выключен</span>');
+							$('#upd_' + srv_rds[index]['name'] + ' .serv__rd__line span').css('width', '0%');
+					});
+				}
+			}
+		
+			get_server();
+			
+			$(".download__multiplayer").click(function() {
+			window.location = '../cdn.rage.mp/public/files/RAGEMultiplayer_Setup.exe';
+			});
+		
+	    
+	       function CopyToClipboard(containerid) {
+	           var ct = $('#' + containerid + ' span');
+	           var a = $('#' + containerid + ' a');
+	           var prevHtml = a.html();
+	           var $temp = $("<input style='opacity:0;'>");
+	           $("body").append($temp);
+	           $temp.val(ct.text()).select();
+	           document.execCommand("copy");
+	           $temp.remove();
+	           a.text('Скопирован!');
+	           setTimeout(function() { 
+	               $('#' + containerid + ' a').text(prevHtml)
+	           },  700)
+	       }
+
+	         get_server();
+	        
+	</script>
+	
+	 <script>$(window).on('load', function () {
+    var $preloader = $('#p_prldr'),
+        $svg_anm   = $preloader.find('.svg_anm');
+    $svg_anm.fadeOut();
+    $preloader.delay(500).fadeOut('slow');
+});</script>
+	
+ <!— Yandex.Metrika counter —>
+ <script type="text/javascript">
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window, document, "script", "../mc.yandex.ru/metrika/tag.js", "ym");
+
+ym(53059735, "init", {
+clickmap:true,
+trackLinks:true,
+accurateTrackBounce:true,
+webvisor:true
+});
+</script>
+ <noscript><div><img src="../mc.yandex.ru/watch/53059735/1" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!— /Yandex.Metrika counter —>
+
+ <script type="text/javascript">!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="../vk.com/js/api/openapi_4b89dc2b.js",t.onload=function(){VK.Retargeting.Init("VK-RTRG-491901-3fWdN"),VK.Retargeting.Hit(),VK.Goal('page_view')},document.head.appendChild(t)}();</script>
+ <noscript><img src="../vk.com/rtrg_787d6780" style="position:fixed; left:-999px;" alt="" /></noscript>
+	 <div id="fp-nav">
+		 <ul></ul>
+	 </div>
+ </body style="width=90%: magin:auto">
+ </html>
